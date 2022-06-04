@@ -31,6 +31,7 @@ body{
 /*******************************************/
 html{
      font-size: 17px;
+     font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -64,11 +65,12 @@ li span{
      margin-left:10px ;
 }
 .selection li{
-     padding: 6px;
+     /* padding: 10px; */
+     transition: padding 1sec;
 }
 .selection li :hover{
      background-color: rgb(164, 163, 163);
-     padding: 5px;
+     padding: 10px;
      border-radius: 3px;
 }
 
@@ -78,9 +80,14 @@ li span{
      color: black;
      border-radius: 20px;
 }
+
 .icon .fa-xmark{
      border-radius: 27px;
 }
+/* .icon .fa-xmark :hover{
+     border-radius: 27px;
+     background-color: none;
+} */
 #main .fa-caret-down{
      color:white;
      margin-left: -50px;
