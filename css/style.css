@@ -1,0 +1,160 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+     font-size: 17px;
+}
+
+a{
+     color: black;
+}
+.fa-solid{
+     color:black;
+}
+li{
+     list-style: none;
+}
+li>a{
+     text-decoration: none;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     margin-inline: 20px;
+     margin-block: 15px;
+     font-size: 1.2rem;
+}
+ul{
+     display: flex;
+     margin-block: 0; 
+}
+ul li{
+     margin-inline: 20px;
+     padding-block: 7px;
+}
+li span{
+     margin-left:10px ;
+}
+.selection li{
+     padding: 6px;
+}
+.selection li :hover{
+     background-color: rgb(164, 163, 163);
+     padding: 5px;
+     border-radius: 3px;
+}
+
+.icon i{
+     padding: 10px;
+     background-color: rgb(182, 180, 180);
+     color: black;
+     border-radius: 20px;
+}
+.icon .fa-xmark{
+     border-radius: 27px;
+}
+#main .fa-caret-down{
+     color:white;
+     margin-left: -50px;
+}
+
+#main{
+     justify-content: center;
+     text-align: center;
+     margin-block-start: 100px;
+}
+#largeIcon{
+     font-size: 9rem;
+     color: rgb(128, 128, 128);
+}
+.input{
+     background: rgb(33, 33, 165);
+     color: white;
+     padding: 19px;
+     /* margin: px; */
+     border-radius: 3px;
+}
+#main .receive{
+     color: red;
+     background-color: rgb(209, 209, 209);
+     width:80%;
+     border:none;
+}
+form button{
+     color: white;
+     background:rgb(33, 33, 165);
+     padding: 19px;
+     border: none;
+     margin-left: -10px;
+     border-radius: 3px;
+}
+#main h1{
+     margin-block-start: 50px;
+}
+#main p{
+     margin-block-end: 50px;
+}
+
+@media screen and (max-width: 600px) {
+     html{
+          font-size: 13px;
+     }
+     form button{
+          padding: 20px;
+          border: none;
+          margin-left: -69px;
+     }
+     
+}
+@media screen and (max-width: 500px) {
+     html{
+          font-size: 11px;
+     }
+     section i{
+          margin-inline: 6px;
+     }
+     form button{
+          padding: 20px;
+          border: none;
+          margin-left: -69px;
+     }
+     ul li{
+          margin-inline: 15px;
+     }
+     li span{
+          margin-left:5px ;
+     }
+     
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
